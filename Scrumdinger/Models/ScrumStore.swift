@@ -41,6 +41,24 @@ class ScrumStore: ObservableObject {
                 }
             }
     }
+    
+    static func load() async throws -> [DailyScrum] {
+        // suspends the load fn, passes continuation into a closure
+        // continuation is a value that reps the code after an awaited fn
+        try await withCheckedThrowingContinuation { continuation in
+            load { result in
+                switch result {
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                case .success(let scrums):
+                    continuation.resume(returning: scrums)
+                }
+            
+            }
+        }
+    }
+    
+    
     static func save(scrums: [DailyScrum], completion: @escaping(Result<Int, Error>)->Void){
         DispatchQueue.global(qos: .background).async {
            //encode scrums, send errors to catch
@@ -57,6 +75,23 @@ class ScrumStore: ObservableObject {
                 }
                 }
             
+        }
+    }
+    
+    @discardableResult
+    static func save(scrums: [DailyScrum]) async throws -> Int {
+        // suspends the load fn, passes continuation into a closure
+        // continuation is a value that reps the code after an awaited fn
+        try await withCheckedThrowingContinuation { continuation in
+            save(scrums: scrums) { result in
+                switch result {
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                case .success(let scrumsSaved):
+                    continuation.resume(returning: scrumsSaved)
+                }
+            
+            }
         }
     }
 
