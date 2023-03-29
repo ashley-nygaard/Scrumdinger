@@ -16,6 +16,13 @@ struct MeetingTimerView: View {
     private var currentSpeaker: String {
         speakers.first(where: {!$0.isCompleted})?.name ?? "Someone"
     }
+    private var speakerNumber: Int? {
+        guard let index = speakers.firstIndex(where: { !$0.isCompleted }) else { return nil}
+        return index + 1
+    }
+    private var speakerText: String {
+        speakers[speakerNumber!].name
+    }
     
     var body: some View {
         Circle()
@@ -29,6 +36,11 @@ struct MeetingTimerView: View {
                         .font(.title)
                         .padding(.top)
                         .accessibilityLabel(isRecording ? "with transcription" : "without transcription")
+                    if (speakerNumber != nil && speakerNumber! < speakers.count){
+                        Text("On Deck")
+                            .padding(.top)
+                        Text(speakerText)
+                    }
                 }
                 .accessibilityElement(children: .combine)
                 .foregroundStyle(theme.accentColor)
