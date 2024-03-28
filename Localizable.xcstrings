@@ -1,0 +1,123 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    " is speaking" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "está hablando"
+          }
+        }
+      }
+    },
+    "%lld" : {
+
+    },
+    "%lld attendees" : {
+
+    },
+    "%lld minute meeting" : {
+
+    },
+    "%lld minutes" : {
+
+    },
+    "Add" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar"
+          }
+        }
+      }
+    },
+    "Add a new scrum" : {
+
+    },
+    "Add attendee" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar asistente\n"
+          }
+        }
+      }
+    },
+    "An error has occured" : {
+
+    },
+    "Attendees" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Daily Scrums" : {
+
+    },
+    "Dismiss" : {
+
+    },
+    "Done" : {
+
+    },
+    "Edit" : {
+
+    },
+    "History" : {
+
+    },
+    "Last Speaker" : {
+
+    },
+    "Length" : {
+
+    },
+    "Meeting Info" : {
+
+    },
+    "New Attendee" : {
+
+    },
+    "Next speaker" : {
+
+    },
+    "No meetings yet" : {
+
+    },
+    "On Deck" : {
+
+    },
+    "Seconds Elapsed" : {
+
+    },
+    "Seconds Remaining" : {
+
+    },
+    "Start Meeting" : {
+
+    },
+    "Theme" : {
+
+    },
+    "Time Remaining" : {
+
+    },
+    "Title" : {
+
+    },
+    "Transcript" : {
+
+    },
+    "with transcription" : {
+
+    },
+    "without transcription" : {
+
+    }
+  },
+  "version" : "1.0"
+}
