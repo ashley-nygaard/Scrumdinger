@@ -11,9 +11,9 @@ struct ErrorView: View {
     let errorWrapper: ErrorWrapper
     @Environment(\.dismiss) private var dismiss
   
-  let error = String(localized: "An error has occured")
-  let dismissBtn = String(localized: "Dismiss" )
-  let ignore = String(localized: "You can safely ignore")
+    let error = String(localized: "An error has occured")
+    let dismissBtn = String(localized: "Dismiss" )
+    let ignore = String(localized: "You can safely ignore")
     
     var body: some View {
         NavigationView {

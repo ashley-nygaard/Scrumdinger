@@ -25,10 +25,10 @@ struct MeetingHeaderView: View {
         
     }
   
-  let secondsEl = String(localized: "Seconds Elapsed")
-  let secondsRemain = String(localized: "Seconds Remaining")
-  let timeRemain = String(localized: "Time Remaining")
-  let min = String(localized: "minutes")
+    let secondsEl = String(localized: "Seconds Elapsed")
+    let secondsRemain = String(localized: "Seconds Remaining")
+    let timeRemain = String(localized: "Time Remaining")
+    let min = String(localized: "minutes")
     
     var body: some View {
         VStack {

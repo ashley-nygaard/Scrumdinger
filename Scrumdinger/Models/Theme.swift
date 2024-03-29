@@ -25,6 +25,7 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
     case teal
     case yellow
     
+    // Each of the above was added manually to the localizable file
     
     var accentColor: Color {
         switch self {
@@ -36,14 +37,16 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
     var mainColor: Color {
         Color(rawValue)
     }
-    
+
     var name: String {
-        rawValue.capitalized
+      return NSLocalizedString(self.rawValue.capitalized, comment: "color")
     }
     
     var id: String {
         name
     }
+  
+
     
 }
 

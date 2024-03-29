@@ -5,7 +5,7 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "%@"
           }
         },
@@ -35,6 +35,7 @@
       }
     },
     "%@" : {
+      "comment" : "title chosen by user",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -51,6 +52,7 @@
       }
     },
     "%lld" : {
+      "comment" : "user defined attendee count",
       "localizations" : {
         "en" : {
           "variations" : {
@@ -301,6 +303,40 @@
         }
       }
     },
+    "Bubblegum" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BUBBLEGUM"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CHICLE"
+          }
+        }
+      }
+    },
+    "Buttercup" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BUTTERCUP"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BOTON DE ORO"
+          }
+        }
+      }
+    },
     "Cancel" : {
       "localizations" : {
         "en" : {
@@ -339,7 +375,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "scrums diarios"
+            "value" : "Scrums Diarios"
           }
         }
       }
@@ -425,6 +461,23 @@
         }
       }
     },
+    "Indigo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "INDIGO"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ÍNDIGO"
+          }
+        }
+      }
+    },
     "is speaking" : {
       "localizations" : {
         "en" : {
@@ -457,6 +510,23 @@
         }
       }
     },
+    "Lavender" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LAVENDER"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LAVENDER"
+          }
+        }
+      }
+    },
     "Length" : {
       "localizations" : {
         "en" : {
@@ -478,7 +548,24 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\nduración de la reunión"
+            "value" : "duración de la reunión"
+          }
+        }
+      }
+    },
+    "Magenta" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MAGENTA"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MAGENTA"
           }
         }
       }
@@ -511,6 +598,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "minutos"
+          }
+        }
+      }
+    },
+    "Navy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NAVY"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ARAMDA"
           }
         }
       }
@@ -605,6 +709,91 @@
         }
       }
     },
+    "Orange" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ORANGE"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NARANJA"
+          }
+        }
+      }
+    },
+    "Oxblood" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OXBLOOD"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SANGRE DE BUEY"
+          }
+        }
+      }
+    },
+    "Periwinkle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PERIWINKLE"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BIGARO"
+          }
+        }
+      }
+    },
+    "Poppy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "POPPY"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AMAPOLA"
+          }
+        }
+      }
+    },
+    "Purple" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PURPLE"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MORADA"
+          }
+        }
+      }
+    },
     "Scrumdinger will load sample data and continue." : {
       "localizations" : {
         "en" : {
@@ -617,6 +806,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scrumdinger cargará datos de muestra y continuará."
+          }
+        }
+      }
+    },
+    "Seafoam" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SEAFOAM"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ESPUMA DE MAR"
           }
         }
       }
@@ -649,6 +855,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Segundos restantes"
+          }
+        }
+      }
+    },
+    "Sky" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SKY"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CIELO"
           }
         }
       }
@@ -697,6 +920,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Iniciar Reunión"
+          }
+        }
+      }
+    },
+    "Tan" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TAN"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BRONCEARSE"
+          }
+        }
+      }
+    },
+    "Teal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TEAL"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VERDE AZULADO"
           }
         }
       }
@@ -810,6 +1067,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "sin transcripción"
+          }
+        }
+      }
+    },
+    "Yellow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YELLOW"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AMARILLA"
           }
         }
       }

@@ -9,9 +9,10 @@ import SwiftUI
 
 struct HistoryView: View {
   
-  let attendees = String(localized: "Attendees")
-  let transcript = String(localized: "Transcript")
+    let attendees = String(localized: "Attendees")
+    let transcript = String(localized: "Transcript")
     let history: History
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {

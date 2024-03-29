@@ -12,14 +12,12 @@ struct MeetingTimerView: View {
     let isRecording: Bool
     let theme: Theme
   
-  let someone = String(localized: "Someone")
-  let isSpeaking = String(localized: "is speaking")
-  let onDeck = String(localized: "On Deck")
-  let withT = String(localized: "with transcription")
-  let withoutT = String(localized: "without transcription")
+    let someone = String(localized: "Someone")
+    let isSpeaking = String(localized: "is speaking")
+    let onDeck = String(localized: "On Deck")
+    let withT = String(localized: "with transcription")
+    let withoutT = String(localized: "without transcription")
 
-    
-    
     private var currentSpeaker: String {
         speakers.first(where: {!$0.isCompleted})?.name ?? someone
     }
