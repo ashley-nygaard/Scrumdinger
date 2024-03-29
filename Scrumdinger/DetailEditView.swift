@@ -7,14 +7,14 @@ import SwiftUI
 struct DetailEditView: View {
     @Binding var data: DailyScrum.Data
     @State private var newAttendeeName = ""
-  let info = String(localized: "Meeting Info")
-  let title = String(localized: "Title")
-  let length = String(localized: "Length")
-  let minutes = String(localized: "minutes")
-  let attendees = String(localized: "attendees")
-  let newAttendee = String(localized: "New Attendee")
-  let addAttendee = String(localized: "Add Attendee")
-    
+    let info = String(localized: "Meeting Info")
+    let title = String(localized: "Title")
+    let length = String(localized: "Length")
+    let minutes = String(localized: "minutes")
+    let attendees = String(localized: "attendees")
+    let newAttendee = String(localized: "New Attendee")
+    let addAttendee = String(localized: "Add Attendee")
+        
     var body: some View {
         Form {
             Section(header: Text("\(info)")) {

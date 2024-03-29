@@ -10,17 +10,17 @@ struct DetailView: View {
     @State private var data = DailyScrum.Data()
     @State private var isPresentingEditView = false
   
-  let info = String(localized: "Meeting Info" )
-  let start = String(localized: "Start Meeting")
-  let length = String(localized: "Length")
-  let min = String(localized: "minutes")
-  let theme = String(localized: "Theme", comment: "Theme color for meeting")
-  let attendees = String(localized: "Attendees", comment: "Detailview page")
-  let history = String(localized: "History", comment: "DetailView History section")
-  let noHistory = String(localized: "No meetings yet")
-  let edit = String(localized: "Edit")
-  let cancel = String(localized: "Cancel")
-  let done = String(localized: "Done")
+    let info = String(localized: "Meeting Info" )
+    let start = String(localized: "Start Meeting")
+    let length = String(localized: "Length")
+    let min = String(localized: "minutes")
+    let theme = String(localized: "Theme", comment: "Theme color for meeting")
+    let attendees = String(localized: "Attendees", comment: "Detailview page")
+    let history = String(localized: "History", comment: "DetailView History section")
+    let noHistory = String(localized: "No meetings yet")
+    let edit = String(localized: "Edit")
+    let cancel = String(localized: "Cancel")
+    let done = String(localized: "Done")
   
     
     var body: some View {

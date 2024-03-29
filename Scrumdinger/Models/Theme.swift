@@ -25,6 +25,7 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
     case teal
     case yellow
     
+    // Each of the above was added manually to the localizable file
     
     var accentColor: Color {
         switch self {

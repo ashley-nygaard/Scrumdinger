@@ -12,8 +12,8 @@ struct ScrumdingerApp: App {
 //    @State private var scrums = DailyScrum.sampleData
     @StateObject private var store = ScrumStore()
     @State private var errorWrapper: ErrorWrapper?
-  let errorMessage = String(localized: "Try again later")
-  let errorWait = String(localized: "Scrumdinger will load sample data and continue.")
+    let errorMessage = String(localized: "Try again later")
+    let errorWait = String(localized: "Scrumdinger will load sample data and continue.")
     
     var body: some Scene {
         WindowGroup {

@@ -17,7 +17,7 @@ struct CardView: View {
                 .accessibilityAddTraits(.isHeader)
             Spacer()
             HStack {
-              // here becomes a problem when we want to localize because the text is rendered but there is no text after so the system determines it's a number. In localizable file use %lld to reprsent Int with no text 
+              // here becomes a problem when we want to localize because the text is rendered but there is no  text after so the system determines it's a number. In localizable file use %lld to represent   Int with no text 
               Label(String(localized: "\(scrum.attendees.count)", comment: "user defined attendee count"), systemImage: "person.3")
                     .accessibilityLabel("number of attendees")
                 Spacer()
@@ -29,7 +29,7 @@ struct CardView: View {
             .font(.caption)
         }
         .padding()
-      // localized through the assets catalog
+        // localized through the assets catalog
         .foregroundColor(scrum.theme.accentColor)
     }
 }
