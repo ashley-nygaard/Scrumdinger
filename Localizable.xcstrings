@@ -5,7 +5,11 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
+<<<<<<< Updated upstream
             "state" : "needs_review",
+=======
+            "state" : "translated",
+>>>>>>> Stashed changes
             "value" : "%@"
           }
         },
@@ -301,6 +305,43 @@
         }
       }
     },
+<<<<<<< Updated upstream
+=======
+    "Bubblegum" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BUBBLEGUM"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "CHICLE"
+          }
+        }
+      }
+    },
+    "Buttercup" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BUTTERCUP"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "BOTON DE ORO"
+          }
+        }
+      }
+    },
+>>>>>>> Stashed changes
     "Cancel" : {
       "localizations" : {
         "en" : {
@@ -339,7 +380,11 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
+<<<<<<< Updated upstream
             "value" : "scrums diarios"
+=======
+            "value" : "Scrums Diarios"
+>>>>>>> Stashed changes
           }
         }
       }
@@ -425,6 +470,26 @@
         }
       }
     },
+<<<<<<< Updated upstream
+=======
+    "Indigo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "INDIGO"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ÍNDIGO"
+          }
+        }
+      }
+    },
+>>>>>>> Stashed changes
     "is speaking" : {
       "localizations" : {
         "en" : {
@@ -457,6 +522,26 @@
         }
       }
     },
+<<<<<<< Updated upstream
+=======
+    "Lavender" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LAVENDER"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "LAVENDER"
+          }
+        }
+      }
+    },
+>>>>>>> Stashed changes
     "Length" : {
       "localizations" : {
         "en" : {
@@ -478,7 +563,28 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
+<<<<<<< Updated upstream
             "value" : "\nduración de la reunión"
+=======
+            "value" : "duración de la reunión"
+          }
+        }
+      }
+    },
+    "Magenta" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MAGENTA"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "MAGENTA"
+>>>>>>> Stashed changes
           }
         }
       }
@@ -515,6 +621,26 @@
         }
       }
     },
+<<<<<<< Updated upstream
+=======
+    "Navy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NAVY"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ARAMDA"
+          }
+        }
+      }
+    },
+>>>>>>> Stashed changes
     "New Attendee" : {
       "localizations" : {
         "en" : {
@@ -605,6 +731,94 @@
         }
       }
     },
+<<<<<<< Updated upstream
+=======
+    "Orange" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ORANGE"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NARANJA"
+          }
+        }
+      }
+    },
+    "Oxblood" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OXBLOOD"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SANGRE DE BUEY"
+          }
+        }
+      }
+    },
+    "Periwinkle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PERIWINKLE"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BIGARO"
+          }
+        }
+      }
+    },
+    "Poppy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "POPPY"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AMAPOLA"
+          }
+        }
+      }
+    },
+    "Purple" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PURPLE"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MORADA"
+          }
+        }
+      }
+    },
+>>>>>>> Stashed changes
     "Scrumdinger will load sample data and continue." : {
       "localizations" : {
         "en" : {
@@ -621,6 +835,26 @@
         }
       }
     },
+<<<<<<< Updated upstream
+=======
+    "Seafoam" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SEAFOAM"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ESPUMA DE MAR"
+          }
+        }
+      }
+    },
+>>>>>>> Stashed changes
     "Seconds Elapsed" : {
       "localizations" : {
         "en" : {
@@ -653,6 +887,26 @@
         }
       }
     },
+<<<<<<< Updated upstream
+=======
+    "Sky" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SKY"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CIELO"
+          }
+        }
+      }
+    },
+>>>>>>> Stashed changes
     "Someone" : {
       "localizations" : {
         "en" : {
@@ -701,6 +955,43 @@
         }
       }
     },
+<<<<<<< Updated upstream
+=======
+    "Tan" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TAN"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BRONCEARSE"
+          }
+        }
+      }
+    },
+    "Teal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TEAL"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VERDE AZULADO"
+          }
+        }
+      }
+    },
+>>>>>>> Stashed changes
     "Theme" : {
       "comment" : "Theme color for meeting",
       "localizations" : {
@@ -814,6 +1105,26 @@
         }
       }
     },
+<<<<<<< Updated upstream
+=======
+    "Yellow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YELLOW"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AMARILLA"
+          }
+        }
+      }
+    },
+>>>>>>> Stashed changes
     "You can safely ignore" : {
       "localizations" : {
         "en" : {

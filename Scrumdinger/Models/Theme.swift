@@ -36,14 +36,16 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
     var mainColor: Color {
         Color(rawValue)
     }
-    
+
     var name: String {
-        rawValue.capitalized
+      return NSLocalizedString(self.rawValue.capitalized, comment: "color")
     }
     
     var id: String {
         name
     }
+  
+
     
 }
 
