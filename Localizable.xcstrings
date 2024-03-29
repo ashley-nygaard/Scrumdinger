@@ -35,6 +35,7 @@
       }
     },
     "%@" : {
+      "comment" : "title chosen by user",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -51,6 +52,7 @@
       }
     },
     "%lld" : {
+      "comment" : "user defined attendee count",
       "localizations" : {
         "en" : {
           "variations" : {

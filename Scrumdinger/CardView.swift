@@ -12,16 +12,16 @@ struct CardView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(scrum.title)
+          Text(String(localized: "\(scrum.title)", comment: "title chosen by user"))
                 .font(.headline)
                 .accessibilityAddTraits(.isHeader)
             Spacer()
             HStack {
               // here becomes a problem when we want to localize because the text is rendered but there is no text after so the system determines it's a number. In localizable file use %lld to reprsent Int with no text 
-                Label("\(scrum.attendees.count)", systemImage: "person.3")
+              Label(String(localized: "\(scrum.attendees.count)", comment: "user defined attendee count"), systemImage: "person.3")
                     .accessibilityLabel("number of attendees")
                 Spacer()
-                Label("\(scrum.lengthInMinutes)", systemImage: "clock")
+              Label(String(localized: "\(scrum.lengthInMinutes)", comment: "user defined meeting length"), systemImage: "clock")
                     .labelStyle(.trailingIcon)
                     .accessibilityLabel("length of the meeting")
 
@@ -29,6 +29,7 @@ struct CardView: View {
             .font(.caption)
         }
         .padding()
+      // localized through the assets catalog
         .foregroundColor(scrum.theme.accentColor)
     }
 }

@@ -40,7 +40,7 @@ struct DetailView: View {
                 HStack {
                     Label(theme, systemImage: "paintpalette")
                     Spacer()
-                  Text(scrum.theme.name.localizedCapitalized)
+                  Text(String(localized: "\(scrum.theme.name.localizedCapitalized)", comment: "color chosen by user"))
                         .padding(4)
                         .foregroundColor(scrum.theme.accentColor)
                         .background(scrum.theme.mainColor)
@@ -69,6 +69,7 @@ struct DetailView: View {
                 }
             }
         }
+        // not localized by us, user created field
         .navigationTitle(scrum.title)
         .toolbar {
             Button(edit) {
