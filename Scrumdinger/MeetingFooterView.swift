@@ -10,6 +10,11 @@ import SwiftUI
 struct MeetingFooterView: View {
     let speakers: [ScrumTimer.Speaker]
     var skipAction: ()->Void
+  
+  let noMore = String(localized: "No more speakers")
+  let speaker = String(localized: "Speaker")
+  let last = String(localized: "Last Speaker")
+  let next = String(localized: "Next Speaker")
     private var speakerNumber: Int? {
         guard let index = speakers.firstIndex(where: { !$0.isCompleted}) else {return nil}
         return index + 1
@@ -21,22 +26,22 @@ struct MeetingFooterView: View {
     }
     
     private var speakerText: String {
-        guard let speakerNumber = speakerNumber else { return "No more speakers"}
-        return "Speaker \(speakerNumber) of \(speakers.count)"
+        guard let speakerNumber = speakerNumber else { return noMore}
+        return "\(speaker) \(speakerNumber) of \(speakers.count)"
     }
     
     var body: some View {
         VStack {
             HStack {
                 if isLastSpeaker {
-                    Text( "Last Speaker")
+                    Text( "\(last)")
                 } else {
                     Text(speakerText)
                     Spacer()
                     Button(action: skipAction) {
                         Image(systemName: "forward.fill")
                     }
-                    .accessibilityLabel("Next speaker")
+                    .accessibilityLabel(next)
                 }
             }
         }

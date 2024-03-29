@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Spanish.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9682B4B329CA38A900615822</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9682B4C329CA38AA00615822</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9682B4CD29CA38AA00615822</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

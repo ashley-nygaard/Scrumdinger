@@ -11,7 +11,7 @@ struct DailyScrum: Identifiable, Codable {
     var id: UUID
     var title: String
     var attendees: [Attendee]
-    var lengthInMinutes: Int
+    var lengthInMinutes: Int = 0
     var theme: Theme
     var history: [History] = []
     

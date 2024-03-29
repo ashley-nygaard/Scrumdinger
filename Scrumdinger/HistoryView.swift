@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct HistoryView: View {
+  
+  let attendees = String(localized: "Attendees")
+  let transcript = String(localized: "Transcript")
     let history: History
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
                 Divider()
                     .padding(.bottom)
-                Text("Attendees")
+                Text("\(attendees)")
                     .font(.headline)
                 Text(history.attendeeString)
                 if let transcript = history.transcript {
-                    Text("Transcript")
+                    Text("\(transcript)")
                         .font(.headline)
                         .padding(.top)
                     Text(transcript)

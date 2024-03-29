@@ -11,10 +11,17 @@ struct MeetingTimerView: View {
     let speakers: [ScrumTimer.Speaker]
     let isRecording: Bool
     let theme: Theme
+  
+  let someone = String(localized: "Someone")
+  let isSpeaking = String(localized: "is speaking")
+  let onDeck = String(localized: "On Deck")
+  let withT = String(localized: "with transcription")
+  let withoutT = String(localized: "without transcription")
+
     
     
     private var currentSpeaker: String {
-        speakers.first(where: {!$0.isCompleted})?.name ?? "Someone"
+        speakers.first(where: {!$0.isCompleted})?.name ?? someone
     }
     private var speakerNumber: Int? {
         guard let index = speakers.firstIndex(where: { !$0.isCompleted }) else { return nil}
@@ -31,13 +38,13 @@ struct MeetingTimerView: View {
                 VStack{
                     Text(currentSpeaker)
                         .font(.title)
-                    Text(" is speaking")
+                    Text(" \(isSpeaking)")
                     Image(systemName: isRecording ? "mic" : "mic.slash")
                         .font(.title)
                         .padding(.top)
-                        .accessibilityLabel(isRecording ? "with transcription" : "without transcription")
+                        .accessibilityLabel(isRecording ? withT : withoutT)
                     if (speakerNumber != nil && speakerNumber! < speakers.count){
-                        Text("On Deck")
+                        Text("\(onDeck)")
                             .padding(.top)
                         Text(speakerText)
                     }

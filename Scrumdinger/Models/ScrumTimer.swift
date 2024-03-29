@@ -29,7 +29,7 @@ class ScrumTimer: ObservableObject {
     private(set) var speakers: [Speaker] = []
 
     /// The scrum meeting length.
-    private(set) var lengthInMinutes: Int
+    private(set) var lengthInMinutes: Int = 0
     /// A closure that is executed when a new attendee begins speaking.
     var speakerChangedAction: (() -> Void)?
 

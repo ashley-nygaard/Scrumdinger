@@ -17,12 +17,13 @@ struct CardView: View {
                 .accessibilityAddTraits(.isHeader)
             Spacer()
             HStack {
+              // here becomes a problem when we want to localize because the text is rendered but there is no text after so the system determines it's a number. In localizable file use %lld to reprsent Int with no text 
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
-                    .accessibilityLabel("\(scrum.attendees.count) attendees")
+                    .accessibilityLabel("number of attendees")
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
                     .labelStyle(.trailingIcon)
-                    .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
+                    .accessibilityLabel("length of the meeting")
 
             }
             .font(.caption)

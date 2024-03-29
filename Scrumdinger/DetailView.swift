@@ -9,23 +9,36 @@ struct DetailView: View {
     
     @State private var data = DailyScrum.Data()
     @State private var isPresentingEditView = false
+  
+  let info = String(localized: "Meeting Info" )
+  let start = String(localized: "Start Meeting")
+  let length = String(localized: "Length")
+  let min = String(localized: "minutes")
+  let theme = String(localized: "Theme", comment: "Theme color for meeting")
+  let attendees = String(localized: "Attendees", comment: "Detailview page")
+  let history = String(localized: "History", comment: "DetailView History section")
+  let noHistory = String(localized: "No meetings yet")
+  let edit = String(localized: "Edit")
+  let cancel = String(localized: "Cancel")
+  let done = String(localized: "Done")
+  
     
     var body: some View {
         List {
-            Section(header: Text("Meeting Info")) {
+            Section(header: Text("\(info)")) {
                 NavigationLink(destination: MeetingView(scrum: $scrum)) {
-                    Label("Start Meeting", systemImage: "timer")
+                    Label(start, systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)
                 }
                 HStack {
-                    Label("Length", systemImage: "clock")
+                    Label(length, systemImage: "clock")
                     Spacer()
-                    Text("\(scrum.lengthInMinutes) minutes")
+                    Text("\(scrum.lengthInMinutes) \(min) ")
                 }
                 .accessibilityElement(children: .combine)
                 HStack {
-                    Label("Theme", systemImage: "paintpalette")
+                    Label(theme, systemImage: "paintpalette")
                     Spacer()
                     Text(scrum.theme.name)
                         .padding(4)
@@ -35,14 +48,14 @@ struct DetailView: View {
                 }
                 .accessibilityElement(children: .combine)
             }
-            Section(header: Text("Attendees")) {
+            Section(header: Text("\(attendees)")) {
                 ForEach(scrum.attendees) { attendee in
                     Label(attendee.name, systemImage: "person")
                 }
             }
-            Section(header: Text("History")){
+            Section(header: Text("\(history)")){
                 if scrum.history.isEmpty {
-                    Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
+                    Label(noHistory, systemImage: "calendar.badge.exclamationmark")
                 } else {
                     ForEach(scrum.history) {history in
                         NavigationLink(destination: HistoryView(history: history)){
@@ -58,7 +71,7 @@ struct DetailView: View {
         }
         .navigationTitle(scrum.title)
         .toolbar {
-            Button("Edit") {
+            Button(edit) {
                 isPresentingEditView = true
                 data = scrum.data
             }
@@ -69,12 +82,12 @@ struct DetailView: View {
                     .navigationTitle(scrum.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
-                            Button("Cancel") {
+                            Button(cancel) {
                                 isPresentingEditView = false
                             }
                         }
                         ToolbarItem(placement: .confirmationAction) {
-                            Button("Done") {
+                            Button(done) {
                                 isPresentingEditView = false
                                 scrum.update(from: data)
                             }

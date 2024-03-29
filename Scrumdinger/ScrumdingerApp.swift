@@ -12,6 +12,8 @@ struct ScrumdingerApp: App {
 //    @State private var scrums = DailyScrum.sampleData
     @StateObject private var store = ScrumStore()
     @State private var errorWrapper: ErrorWrapper?
+  let errorMessage = String(localized: "Try again later")
+  let errorWait = String(localized: "Scrumdinger will load sample data and continue.")
     
     var body: some Scene {
         WindowGroup {
@@ -21,7 +23,7 @@ struct ScrumdingerApp: App {
                         do {
                             try await ScrumStore.save(scrums: store.scrums)
                         } catch {
-                            errorWrapper = ErrorWrapper(error: error, guidance: "Try again later")
+                            errorWrapper = ErrorWrapper(error: error, guidance: errorMessage)
                         }
                     }
                 }
@@ -32,7 +34,7 @@ struct ScrumdingerApp: App {
                 do {
                     store.scrums = try await ScrumStore.load()
                 } catch {
-                    errorWrapper = ErrorWrapper(error: error, guidance: "Scrumdinger will load sample data and continue.")
+                    errorWrapper = ErrorWrapper(error: error, guidance: errorWait)
                 }
             }
             .sheet(item: $errorWrapper, onDismiss: {

@@ -10,11 +10,15 @@ import SwiftUI
 struct ErrorView: View {
     let errorWrapper: ErrorWrapper
     @Environment(\.dismiss) private var dismiss
+  
+  let error = String(localized: "An error has occured")
+  let dismissBtn = String(localized: "Dismiss" )
+  let ignore = String(localized: "You can safely ignore")
     
     var body: some View {
         NavigationView {
             VStack {
-                Text("An error has occured")
+                Text("\(error)")
                     .font(.title)
                     .padding(.bottom)
                 Spacer()
@@ -30,7 +34,7 @@ struct ErrorView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Dismiss") {
+                    Button(dismissBtn) {
                         dismiss()
                     }
                 }
@@ -44,7 +48,7 @@ struct ErrorView_Previews: PreviewProvider {
         case errorRequired
     }
     static var wrapper: ErrorWrapper{
-        ErrorWrapper(error: SampleError.errorRequired, guidance: "You can safely ignore this error")
+      ErrorWrapper(error: SampleError.errorRequired, guidance: String(localized:"You can safely ignore this error"))
     }
     static var previews: some View {
         ErrorView(errorWrapper: wrapper)

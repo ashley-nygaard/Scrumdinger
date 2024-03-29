@@ -24,6 +24,11 @@ struct MeetingHeaderView: View {
         return secondsRemaining / 60
         
     }
+  
+  let secondsEl = String(localized: "Seconds Elapsed")
+  let secondsRemain = String(localized: "Seconds Remaining")
+  let timeRemain = String(localized: "Time Remaining")
+  let min = String(localized: "minutes")
     
     var body: some View {
         VStack {
@@ -32,13 +37,13 @@ struct MeetingHeaderView: View {
             
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Seconds Elapsed")
+                    Text("\(secondsEl)")
                         .font(.caption)
                     Label("\(secondsElapsed)", systemImage: "hourglass.bottomhalf.fill")
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
-                    Text("Seconds Remaining")
+                    Text("\(secondsRemain)")
                         .font(.caption)
                     Label("\(secondsRemaining)", systemImage: "hourglass.tophalf.fill")
                         .labelStyle(.trailingIcon)
@@ -46,8 +51,8 @@ struct MeetingHeaderView: View {
             }
         }
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("Time Remaining")
-        .accessibilityValue("\(minutesRemaining) minutes")
+        .accessibilityLabel(timeRemain)
+        .accessibilityValue("\(minutesRemaining) \(min)")
         .padding([.top, .horizontal])
     }
 }

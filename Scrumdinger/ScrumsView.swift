@@ -15,6 +15,11 @@ struct ScrumsView: View {
     @State private var isPresentingNewScrumView = false
     @State private var newScrumData = DailyScrum.Data()
     let saveAction: ()->Void
+  
+  let daily = String(localized: "Daily Scrums")
+  let addNew = String(localized: "Add a new scrum")
+  let dismiss = String(localized:"Dimiss")
+  let add = String(localized: "Add")
 
     var body: some View {
         List {
@@ -27,14 +32,14 @@ struct ScrumsView: View {
                
             }
         }
-        .navigationTitle("Daily Scrums")
+        .navigationTitle(daily)
         .toolbar {
             Button(action: {
                 isPresentingNewScrumView = true
             }){
                 Image(systemName: "plus")
             }
-            .accessibilityLabel("Add a new scrum")
+            .accessibilityLabel(addNew)
                 
         }
         .sheet(isPresented: $isPresentingNewScrumView){
@@ -42,14 +47,14 @@ struct ScrumsView: View {
                 DetailEditView(data: $newScrumData)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
-                            Button("Dismiss") {
+                            Button(dismiss) {
                                 isPresentingNewScrumView = false
                                 newScrumData = DailyScrum.Data()
 
                             }
                         }
                         ToolbarItem(placement: .confirmationAction) {
-                            Button("Add") {
+                            Button(add) {
                                 let newScrum = DailyScrum(data: newScrumData)
                                 scrums.append(newScrum)
                                 isPresentingNewScrumView = false
